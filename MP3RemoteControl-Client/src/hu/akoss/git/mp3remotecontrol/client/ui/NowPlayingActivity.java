@@ -20,8 +20,6 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import hu.akoss.git.mp3control.ui.R;
-
 public class NowPlayingActivity extends Activity implements ISetVolumeAsyncResult, IGetNowPlayingInfoAsyncResult {
 	
 	private Folder _songFolder;

@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package hu.akoss.git.mp3control.ui;
+package hu.akoss.git.mp3remotecontrol.client.ui;
 
 public final class R {
     public static final class attr {

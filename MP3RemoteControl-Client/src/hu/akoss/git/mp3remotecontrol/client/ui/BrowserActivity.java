@@ -8,8 +8,6 @@ import hu.akoss.git.mp3remotecontrol.client.ui.listing.Folder;
 import hu.akoss.git.mp3remotecontrol.client.ui.listing.adapter.FolderAdapter;
 import hu.akoss.git.mp3remotecontrol.client.ui.utils.NotificationProvider;
 
-import hu.akoss.git.mp3control.ui.R;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;

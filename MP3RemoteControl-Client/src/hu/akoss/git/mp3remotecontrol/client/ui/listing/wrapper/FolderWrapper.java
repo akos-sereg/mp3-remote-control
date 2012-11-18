@@ -1,11 +1,10 @@
 package hu.akoss.git.mp3remotecontrol.client.ui.listing.wrapper;
 
+import hu.akoss.git.mp3remotecontrol.client.ui.R;
 import hu.akoss.git.mp3remotecontrol.client.ui.listing.Folder;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import hu.akoss.git.mp3control.ui.R;
 
 public class FolderWrapper {
 

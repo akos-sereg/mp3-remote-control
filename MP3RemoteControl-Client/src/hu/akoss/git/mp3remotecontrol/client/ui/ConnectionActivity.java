@@ -19,8 +19,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-import hu.akoss.git.mp3control.ui.R;
-
 public class ConnectionActivity extends Activity {
 
 	/**

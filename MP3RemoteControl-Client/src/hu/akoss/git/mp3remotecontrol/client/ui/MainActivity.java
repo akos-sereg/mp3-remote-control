@@ -2,8 +2,6 @@ package hu.akoss.git.mp3remotecontrol.client.ui;
 
 import hu.akoss.git.mp3remotecontrol.client.sqlite.LocalSQLite;
 
-import hu.akoss.git.mp3control.ui.R;
-
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;

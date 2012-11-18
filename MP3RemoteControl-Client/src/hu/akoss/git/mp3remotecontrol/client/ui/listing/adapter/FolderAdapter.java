@@ -1,6 +1,6 @@
 package hu.akoss.git.mp3remotecontrol.client.ui.listing.adapter;
 
-import hu.akoss.git.mp3control.ui.R;
+import hu.akoss.git.mp3remotecontrol.client.ui.R;
 import hu.akoss.git.mp3remotecontrol.client.ui.listing.Folder;
 import hu.akoss.git.mp3remotecontrol.client.ui.listing.wrapper.FolderWrapper;
 
