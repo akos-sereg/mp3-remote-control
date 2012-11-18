@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="build" name="MP3RemoteControl-Server">
+  <property file="build.properties"/>
+  <property name="src.dir" value="../src"/>
+  <property name="build.dir" value="classes"/>
+ 
+  <path id="build.classpath">
+      <fileset dir="lib">
+          <include name="*.jar"/>
+      </fileset>
+      <fileset dir="${appserver.lib}"> <!-- servlet API classes: -->
+          <include name="servlet*.jar"/>
+      </fileset>
+      <pathelement path="${build.dir}"/>
+  </path>		
+ 
+  <target name="build">
+      <mkdir dir="${build.dir}"/>
+      <javac destdir="${build.dir}" source="1.5" target="1.5" debug="true" deprecation="false" optimize="false" failonerror="true">
+          <src path="${src.dir}"/>
+          <classpath refid="build.classpath"/>
+      </javac>
+      
+      <!-- Deploy Mp3RemoteControl-Server on Tomcat6 -->
+      <delete>
+          <fileset dir="${appserver.mp3rc.home}"/>
+      </delete>
+      <copy todir="${appserver.mp3rc.home}">
+    	  <fileset dir="."/>
+  	  </copy>
+  </target>
+ 
+  <target name="clean" description="Clean output directories">
+      <delete>
+          <fileset dir="${build.dir}">
+              <include name="**/*.class"/>
+          </fileset>
+      </delete>
+  </target>
+ 
+</project>
