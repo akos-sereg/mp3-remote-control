@@ -15,7 +15,6 @@ import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
@@ -34,20 +33,16 @@ public class Proxy {
 		// Create a new HttpClient and Post Header
 		HttpClient httpclient = new DefaultHttpClient();
 		
-		String url = String.format("http://%s/mp3control-srvc/%s?Username=%s&Password=%s", 
+		String url = String.format("http://%s/MP3ControlService/%s", 
 				Settings.getConnection().getServiceUrl(), 
-				service_,
-				Settings.getConnection().getUsername(),
-				Settings.getConnection().getPassword());
+				service_);
+		
+		params_.put("Username", Settings.getConnection().getUsername());
+		params_.put("Password", Settings.getConnection().getPassword());
 		
 		try {
 			//HttpPost httpGet = new HttpPost(url);
 			HttpPost httppost = new HttpPost(url);
-//			httppost.addHeader(
-//					"Authorization", 
-//					String.format(
-//							"Basic %s", 
-//							Base64.encodeToString(usernameAndPassword.getBytes(), Base64.NO_WRAP)));
 			
 		    List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(params_.size());
 		 
