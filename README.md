@@ -1,8 +1,10 @@
 mp3-remote-control
 ==================
 
-Mp3 Remote Control project allows you to control what music you would like to listen on your PC.   
-Client application is an Android app, backend is a tomcat servlet.
+Mp3 Remote Control project allows you to control the music your PC is playing from your Android phone
+(experimental project)
+
+It works through WLAN as well as LAN.
 
 Screenshots:
 
